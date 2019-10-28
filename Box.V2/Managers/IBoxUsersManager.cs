@@ -101,7 +101,7 @@ namespace Box.V2.Managers
         /// </summary>
         /// <param name="userId">The user identifier.</param>
         /// <returns>Returns the complete user object.</returns>
-        Task<BoxUser> GetUserInformationAsync(string userId);
+        Task<BoxUser> GetUserInformationAsync(string userId, IEnumerable<string> fields = null);
 
         /// <summary>
         /// Retrieves all email aliases for this user. The collection of email aliases does not include the primary login for the user.
